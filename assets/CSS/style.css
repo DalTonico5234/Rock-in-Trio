@@ -1,0 +1,90 @@
+/* Gerais */
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+nav 
+{
+    display: flex;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    margin: auto;
+}
+
+footer 
+{
+  color: white;
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 50px 0;
+}
+
+nav h1 
+{
+  color: white;
+  scale: 1.2;
+  margin: auto;
+  width: max-content;
+}
+
+nav ul
+{
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin-top: 35px;
+}
+
+nav ul li 
+{
+  padding: 15px;
+  width: max-content;
+}
+
+nav ul a
+{
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  border-bottom: solid red;
+  border-radius: 3px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: max-content;
+}
+
+nav ul a:hover
+{
+  color:red
+}
+
+p
+{
+  margin: 100px;
+}
+
+body
+{
+  background-color: black;
+  margin-left: 20px;
+
+}
+
+.icone
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content
+{
+color: white;
+background-color: black;
+}
