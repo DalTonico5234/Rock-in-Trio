@@ -10,10 +10,38 @@ body
 {
   background-color: black;
 }
+
+body .content p
+{
+  margin-left: 40px;
+}
+
+body .programação li
+{
+    display: flex;
+    gap: 600px;
+    border-bottom: 1px solid white;
+}
+
+body .programação li p
+{
+  margin: 0;
+}
+
+hr
+{
+  border: 0;
+  border-top: 2px solid;
+  width: 100%;
+  color: red;
+}
+
+
 ul 
 {
   list-style: none;
 }
+
 
 a
 {
@@ -22,69 +50,34 @@ a
   font-weight: bold;
 }
 
+
 nav 
 {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 120px;
-    background-color: green;
-    margin: auto;
-}
-
-footer 
-{
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  height:105px;
+  gap: 90px;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #1a1a1a;
-  text-align: center;
-}
-
-footer ul
-{
-  display: flex;
-  gap: 50px;
-}
-
-footer ul li
-{
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-nav h1 
-{
-  color: white;
-  scale: 1.2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background-color: black;
   margin: auto;
 }
 
-nav .icone
+nav h1
 {
-  justify-items: flex-start;
-  align-items: flex-start;
-  background-color: aqua;
+  font-size: xxx-large;
 }
 
 nav ul
 {
   display: flex;
   gap: 30px;
-  background-color: blueviolet;
+  font-size: large;
   list-style: none;
-  margin-top: 80px;
+  margin-top: 90px;
   align-self: center;
 }
 
@@ -104,17 +97,44 @@ nav ul a
   width: max-content;
 }
 
-nav ul a:hover
-{
-  color:red
-}
 
-.icone
+footer 
 {
   display: flex;
-  flex-direction: column;
+  height:105px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  background-color: #1a1a1a;
 }
 
+footer ul
+{
+  display: flex;
+  gap: 50px;
+}
+
+footer ul li
+{
+  display: flex;
+  align-items: center;
+}
+
+footer ul li a
+{
+  display: flex;
+  gap: 10px;
+  width: max-content;
+}
+
+footer ul li a:hover
+{
+  color: white;
+}
+
+
+/* Classes */
 .content
 {
   display: flex;
@@ -150,3 +170,21 @@ nav ul a:hover
   transform: translate(-50%, -50%);
 }
 
+.box_footer
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+
+/* IDs */
+#o_de_cima
+{
+  border-top: 1px solid white;
+}
