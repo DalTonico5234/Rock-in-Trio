@@ -182,6 +182,13 @@ footer ul li a:hover
   text-align: center;
 }
 
+.box_titulo
+{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 
 /* IDs */
 #o_de_cima
