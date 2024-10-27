@@ -5,23 +5,63 @@
   padding: 0;
 }
 
+/* Tags padrão */
+body
+{
+  background-color: black;
+}
+ul 
+{
+  list-style: none;
+}
+
+a
+{
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
 nav 
 {
     display: flex;
-    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: black;
+    height: 120px;
+    background-color: green;
     margin: auto;
 }
 
 footer 
 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height:105px;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: #1a1a1a;
   text-align: center;
-  padding: 50px 0;
+}
+
+footer ul
+{
+  display: flex;
+  gap: 50px;
+}
+
+footer ul li
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 nav h1 
@@ -29,15 +69,23 @@ nav h1
   color: white;
   scale: 1.2;
   margin: auto;
-  width: max-content;
+}
+
+nav .icone
+{
+  justify-items: flex-start;
+  align-items: flex-start;
+  background-color: aqua;
 }
 
 nav ul
 {
   display: flex;
-  text-align: center;
+  gap: 30px;
+  background-color: blueviolet;
   list-style: none;
-  margin-top: 35px;
+  margin-top: 80px;
+  align-self: center;
 }
 
 nav ul li 
@@ -53,8 +101,6 @@ nav ul a
   font-style: italic;
   border-bottom: solid red;
   border-radius: 3px;
-  margin-left: 15px;
-  margin-right: 15px;
   width: max-content;
 }
 
@@ -63,28 +109,44 @@ nav ul a:hover
   color:red
 }
 
-p
-{
-  margin: 100px;
-}
-
-body
-{
-  background-color: black;
-  margin-left: 20px;
-
-}
-
 .icone
 {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .content
 {
-color: white;
-background-color: black;
+  display: flex;
+  gap: 30px;
+  color: white;
+  background-color: black;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  margin: auto;
 }
+
+.titulo
+{
+  justify-self: center;
+  align-self: center;
+  font-size: larger;
+}
+
+.text
+{
+  justify-items: left;
+}
+
+.classe_do_iframe
+{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
